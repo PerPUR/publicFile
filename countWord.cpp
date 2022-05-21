@@ -18,10 +18,10 @@ void countCharOrWord(char *op,char *filename){
 	    charnum+=strlen(line);
 	}
 	fclose(file);
-	if(strcmp(op,"-c")){
-		printf("单词数为:%d",wordnum);
-	}else if(strcmp(op,"-w")){
-	printf("字符数为:%d",charnum);
+	if(!(strcmp(op,"-c"))){
+	 printf("字符数为:%d",charnum);
+	}else if(!(strcmp(op,"-w"))){
+	printf("单词数为:%d",wordnum);
     }else{
     	printf("输入有错误!");
 	}
